@@ -44,8 +44,8 @@
 </head>
 <body>
   <div class="container">
-    <h1>Trace Message Format Monitor</h1>
-    <p>Type the output format at each step right before you perform an action in the box below</p>
+    <h1>Action Schema Monitor</h1>
+    <p>Type in the box below</p>
     <textarea id="textInput" placeholder=""></textarea>
     <div id="status" class="status">Awaiting input...</div>
   </div>
@@ -58,7 +58,7 @@
     const statusDiv = document.getElementById('status');
 
     let lastSent = '';
-    const debounceDelay = 500; // Debounce: send only after 100ms of inactivity
+    const debounceDelay = 500; // Debounce: send only after 500ms of inactivity
     let timeoutId;
 
     textarea.addEventListener('input', () => {
